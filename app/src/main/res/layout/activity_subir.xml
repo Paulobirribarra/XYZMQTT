@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Subir">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="@drawable/borde_lavanda">
+
+            <TextView
+                android:id="@+id/txtSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtSub"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/lavanda"/>
+
+            <ImageView
+                android:id="@+id/uploadImage"
+                android:layout_width="185dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:src="@drawable/sub" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/borde_lavanda"
+                    android:padding="16dp"
+                    android:hint="@string/txtNombre"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/lavanda"
+                    android:ems="10"
+                    android:inputType="text"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtTipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/borde_lavanda"
+                    android:padding="16dp"
+                    android:hint="@string/txtTipo"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/lavanda"
+                    android:ems="10"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilUbi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtUbi"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/borde_lavanda"
+                    android:padding="16dp"
+                    android:hint="@string/txtUbi"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/lavanda"
+                    android:ems="10"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/borde_lavanda"
+                    android:ems="10"
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/txtUrl"
+                    android:inputType="textUri"
+                    android:padding="16dp"
+                    android:textColor="@color/lavanda" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/btnSave"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="20dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabclose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/baseline_clear_24"
+        app:backgroundTint="@color/lavanda"
+        app:fabSize="normal"
+        app:layout_anchor="@id/cardView"
+        app:layout_anchorGravity="bottom|end"
+        android:contentDescription="@string/fabclose" />
+   </androidx.coordinatorlayout.widget.CoordinatorLayout>

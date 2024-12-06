@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">XYZ</string>
+    <string name="search">Search</string>
+    <string name="fab">Boton Agregar</string>
+    <string name="textView">Loading</string>
+    <string name="recName">Nombre:</string>
+    <string name="recTipo">Tipo:</string>
+    <string name="recUbic">Ubicación:</string>
+    <string name="btnBienvenida">Ingresar</string>
+    <string name="txtBienvenida">Sistema de inventario</string>
+    <string name="imageView">Logo Empresa</string>
+    <string name="txtSub">Subir datos</string>
+    <string name="txtNombre">Ingrese el Nombre </string>
+    <string name="txtTipo">Ingrese el Tipo </string>
+    <string name="txtUbi">Ingrese la ubicación </string>
+    <string name="txtUrl">Ingrese la URL </string>
+    <string name="btnSave">Subir</string>
+    <string name="fabclose">Subir</string>
+    <string name="detalleImg">imgView</string>
+    <string name="detalleNombre">Ingrese un nuevo nombre</string>
+    <string name="detalleTipo">Ingrese un nuevo tipo</string>
+    <string name="detalleUbi">Ingrese una nueva ubicación</string>
+    <string name="btnEditar">Precione para Editar</string>
+    <string name="btnActualizar">Precione para Actualizar</string>
+    <string name="detalleUrl">Ingrese una nueva URL</string>
+    <string name="btnEliminar">Elimnar Registro</string>
+
+</resources>
